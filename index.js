@@ -7,6 +7,10 @@ app.use(bodyParser.json());
 
 const posts = {};
 
+app.get('/', (req, res)=>{
+    res.send("Hello Posts!")
+})
+
 app.get('/posts', (req, res)=>{
     res.send(posts);
 });
