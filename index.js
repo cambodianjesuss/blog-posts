@@ -38,6 +38,11 @@ app.post('/posts', async (req, res)=>{
     res.status(201).send(posts[id]);
 });
 
+// Event Handler
+app.post('/events', (req, res)=>{
+    console.log('Recieved Event', req.body);
+})
+
 app.listen(4000, ()=>{
     console.log('Posts Service on 4000')
 });
