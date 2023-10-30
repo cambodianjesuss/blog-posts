@@ -41,7 +41,7 @@ app.post('/posts', async (req, res)=>{
 // Event Handler
 app.post('/events', (req, res)=>{
     console.log('Recieved Event', req.body);
-})
+});
 
 app.listen(4000, ()=>{
     console.log('Posts Service on 4000')
