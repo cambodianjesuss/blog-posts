@@ -27,7 +27,7 @@ app.post('/posts', async (req, res)=>{
         title
     }
 
-    // Events to emmit
+    // Events to Emit
     await axios.post('http://localhost:4005/events', {
         type: 'PostCreated',
         data: {
